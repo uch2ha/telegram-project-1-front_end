@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Form from './components/Form/Form';
 import Header from './components/Header/Header';
