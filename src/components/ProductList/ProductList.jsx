@@ -87,8 +87,13 @@ const ProductList = () => {
 
     return (
         <div className={'list'}>
-            {ProductList.amp((item) => (
-                <ProductItem product={item} onAdd={onAdd} className={'item'} />
+            {products.map((item) => (
+                <ProductItem
+                    product={item}
+                    key={item.id}
+                    onAdd={onAdd}
+                    className={'item'}
+                />
             ))}
         </div>
     );
